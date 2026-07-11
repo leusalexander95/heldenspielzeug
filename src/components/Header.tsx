@@ -56,8 +56,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur">
       <div className="bg-mint-dark text-center text-xs font-medium text-white py-2 px-4">{t.announce}</div>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo.png" alt="Heldenspielzeug" width={150} height={56} priority className="h-12 w-auto" />
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
+          <Image src="/logo.png" alt="Heldenspielzeug" width={160} height={60} priority className="h-12 w-auto sm:h-14" />
+          <span className="font-display text-xl font-extrabold leading-none tracking-tight text-forest sm:text-3xl">
+            Heldenspielzeug
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
