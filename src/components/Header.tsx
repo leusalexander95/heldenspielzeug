@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
+import Brand from "@/components/Brand";
 import { useLang } from "@/context/LanguageContext";
 import { useCart } from "@/context/CartContext";
 import { categories } from "@/data/products";
@@ -56,8 +56,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur">
       <div className="bg-mint-dark text-center text-xs font-medium text-white py-2 px-4">{t.announce}</div>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center shrink-0">
-          <Image src="/logo.png" alt="Heldenspielzeug" width={320} height={130} priority className="h-14 w-auto sm:h-16 lg:h-20" />
+        <Link href="/" aria-label="Heldenspielzeug" className="shrink-0 text-3xl sm:text-4xl">
+          <Brand />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
