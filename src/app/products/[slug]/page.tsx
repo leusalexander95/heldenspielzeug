@@ -38,14 +38,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         "@type": "Product",
         name: product.name,
         brand: { "@type": "Brand", name: product.brand },
-        image: `https://heldenspielzeug.de/products/${slug}.jpg`,
+        image: `https://heldenspielzeug-shop.de/products/${slug}.jpg`,
         category: getCategory(product.category).de,
         offers: {
           "@type": "Offer",
           priceCurrency: "EUR",
           price: product.price,
           availability: "https://schema.org/InStock",
-          url: `https://heldenspielzeug.de/products/${slug}`,
+          url: `https://heldenspielzeug-shop.de/products/${slug}`,
           seller: { "@type": "Organization", name: "Heldenspielzeug GmbH" },
         },
       }

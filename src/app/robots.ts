@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://heldenspielzeug.de";
+const BASE_URL = "https://heldenspielzeug-shop.de";
 
 export default function robots(): MetadataRoute.Robots {
   return {

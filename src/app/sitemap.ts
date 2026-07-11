@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
 
-const BASE_URL = "https://heldenspielzeug.de";
+const BASE_URL = "https://heldenspielzeug-shop.de";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [

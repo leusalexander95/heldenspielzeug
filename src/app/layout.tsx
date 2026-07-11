@@ -11,7 +11,7 @@ const nunito = Nunito({ variable: "--font-nunito", subsets: ["latin"], display: 
 const baloo = Baloo_2({ variable: "--font-baloo", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://heldenspielzeug.de"),
+  metadataBase: new URL("https://heldenspielzeug-shop.de"),
   title: {
     default: "Heldenspielzeug – Nachhaltiges Spielzeug aus Heidelberg",
     template: "%s · Heldenspielzeug",
@@ -34,8 +34,8 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Heldenspielzeug GmbH",
-  url: "https://heldenspielzeug.de",
-  logo: "https://heldenspielzeug.de/logo.png",
+  url: "https://heldenspielzeug-shop.de",
+  logo: "https://heldenspielzeug-shop.de/logo.png",
   email: "leusalexander95@outlook.com",
   telephone: "+4915776227819",
   address: {
