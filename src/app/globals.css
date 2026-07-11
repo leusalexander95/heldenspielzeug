@@ -40,6 +40,22 @@ body {
   font-family: var(--font-baloo), var(--font-nunito), sans-serif;
 }
 
+/* hand cursor on all clickable elements */
+button,
+a,
+label,
+select,
+summary,
+[role="button"],
+[onclick] {
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+}
+
 /* thin scrollbar hide for marquee */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
