@@ -1,0 +1,138 @@
+import type { Locale } from "@/data/products";
+
+export const dict = {
+  de: {
+    nav: { shop: "Shop", holz: "Holzspielzeug", magnet: "Bau-Sets", about: "Über uns", cart: "Warenkorb" },
+    announce: "Kostenloser Versand ab 50 € · Nachhaltiges Spielzeug aus Heidelberg",
+    hero: {
+      badge: "Nachhaltig · Fair · Aus Liebe zum Spiel",
+      title: "Spielzeug, das mitwächst",
+      subtitle:
+        "Von Bäumen zu Spielzeug: sorgfältig ausgewähltes Holzspielzeug und Bau-Sets, die Fantasie, Bewegung und nachhaltiges Denken fördern.",
+      cta: "Jetzt entdecken",
+      cta2: "Über uns",
+    },
+    sections: {
+      new: "Beliebte Produkte",
+      newSub: "Handverlesenes, nachhaltiges Spielzeug für kleine Helden.",
+      collections: "Kategorien",
+      byAge: "Nach Alter",
+      why: "Warum Heldenspielzeug?",
+      reviews: "Was Eltern sagen",
+      viewAll: "Alle Produkte ansehen",
+    },
+    why: [
+      { t: "Sicher spielen", d: "Schadstofffreie Materialien und wasserbasierte Farben – für sorgenfreies Spielen." },
+      { t: "Fantasie wecken", d: "Offenes Spielzeug, das Kreativität und Entwicklung Ihres Kindes fördert." },
+      { t: "Von Bäumen zu Spielzeug", d: "Nachhaltige Materialien und faire Produktion, aus Verantwortung für morgen." },
+    ],
+    product: {
+      add: "In den Warenkorb",
+      buy: "Jetzt anfragen",
+      features: "Highlights",
+      related: "Das könnte auch gefallen",
+      age: "Alter",
+      category: "Kategorie",
+    },
+    cart: {
+      title: "Warenkorb",
+      empty: "Dein Warenkorb ist leer.",
+      continue: "Weiter einkaufen",
+      total: "Zwischensumme",
+      checkout: "Zur Anfrage",
+      remove: "Entfernen",
+      qty: "Menge",
+    },
+    checkout: {
+      title: "Anfrage abschließen",
+      intro:
+        "Hinterlasse deine E-Mail und Telefonnummer. Wir melden uns bei dir und senden dir den Link zu deinen ausgewählten Produkten zur Bezahlung zu.",
+      name: "Name",
+      email: "E-Mail",
+      phone: "Telefon",
+      note: "Nachricht (optional)",
+      submit: "Anfrage senden",
+      summary: "Deine Auswahl",
+      success: "Vielen Dank! Wir haben deine Anfrage erhalten und melden uns in Kürze mit dem Bezahllink.",
+      backHome: "Zur Startseite",
+      required: "Bitte E-Mail und Telefonnummer angeben.",
+    },
+    footer: {
+      tagline: "Nachhaltiges Spielzeug aus Heidelberg.",
+      shop: "Shop",
+      company: "Unternehmen",
+      contact: "Kontakt",
+      rights: "Alle Rechte vorbehalten.",
+      imprint: "Impressum",
+      privacy: "Datenschutz",
+    },
+  },
+  en: {
+    nav: { shop: "Shop", holz: "Wooden Toys", magnet: "Building Sets", about: "About", cart: "Cart" },
+    announce: "Free shipping over €50 · Sustainable toys from Heidelberg",
+    hero: {
+      badge: "Sustainable · Fair · Made with love",
+      title: "Toys that grow with you",
+      subtitle:
+        "From trees to toys: carefully selected wooden toys and construction sets that nurture imagination, movement and sustainable thinking.",
+      cta: "Shop now",
+      cta2: "About us",
+    },
+    sections: {
+      new: "Popular products",
+      newSub: "Hand-picked, sustainable toys for little heroes.",
+      collections: "Categories",
+      byAge: "Shop by age",
+      why: "Why Heldenspielzeug?",
+      reviews: "What parents say",
+      viewAll: "View all products",
+    },
+    why: [
+      { t: "Play safe", d: "Non-toxic materials and water-based paints – for worry-free play." },
+      { t: "Spark imagination", d: "Open-ended toys that nurture your child's creativity and development." },
+      { t: "From trees to toys", d: "Sustainable materials and fair production, out of responsibility for tomorrow." },
+    ],
+    product: {
+      add: "Add to cart",
+      buy: "Enquire now",
+      features: "Highlights",
+      related: "You might also like",
+      age: "Age",
+      category: "Category",
+    },
+    cart: {
+      title: "Cart",
+      empty: "Your cart is empty.",
+      continue: "Continue shopping",
+      total: "Subtotal",
+      checkout: "Proceed to enquiry",
+      remove: "Remove",
+      qty: "Qty",
+    },
+    checkout: {
+      title: "Complete your enquiry",
+      intro:
+        "Leave your email and phone number. We will get in touch and send you the payment link for your selected products.",
+      name: "Name",
+      email: "Email",
+      phone: "Phone",
+      note: "Message (optional)",
+      submit: "Send enquiry",
+      summary: "Your selection",
+      success: "Thank you! We received your enquiry and will get back to you shortly with the payment link.",
+      backHome: "Back to home",
+      required: "Please provide email and phone number.",
+    },
+    footer: {
+      tagline: "Sustainable toys from Heidelberg.",
+      shop: "Shop",
+      company: "Company",
+      contact: "Contact",
+      rights: "All rights reserved.",
+      imprint: "Imprint",
+      privacy: "Privacy",
+    },
+  },
+} as const;
+
+export type Dict = (typeof dict)[Locale];
